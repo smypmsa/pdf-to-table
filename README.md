@@ -4,6 +4,8 @@
 
 Automated solution for extracting tabular data from PDF documents with Excel output capabilities. Designed for high-volume document processing with robust fallback mechanisms.
 
+Open in [Google Colab](https://colab.research.google.com/github/smypmsa/pdf-to-table/blob/main/OCR_ed_PDF_to_Excel.ipynb).
+
 ## Core Functionality
 
 **Primary Objective**: Convert PDF tables to structured Excel format with minimal manual intervention
