@@ -1,27 +1,44 @@
 # PDF Table Extractor
 
-Extract tables from PDF files and download as XLSX format.
+## Overview
 
-## Usage
+Automated solution for extracting tabular data from PDF documents with Excel output capabilities. Designed for high-volume document processing with robust fallback mechanisms.
 
-1. Open notebook in Google Colab
-2. Run all cells
-3. Upload PDF files when prompted
-4. Download generated XLSX files
+## Core Functionality
 
-## Features
+**Primary Objective**: Convert PDF tables to structured Excel format with minimal manual intervention
 
-- Supports multiple PDF files
-- Uses Camelot + Tabula for extraction
-- Automatic fallback methods
-- Includes table metadata (page, quality)
+**Technical Approach**: 
+- Camelot library for primary extraction
+- Tabula as secondary fallback method
+- Automated quality assessment and metadata preservation
 
-## Limits
+## Implementation
 
-- File size: ~100MB per PDF
-- Total upload: ~200MB per session
-- Works best with structured tables
+### Setup Requirements
+- Google Colab environment
+- Standard Python data processing libraries
 
-## Output
+### Execution Process
+1. Initialize notebook environment
+2. Execute all processing cells
+3. Upload target PDF files via prompt interface
+4. Retrieve generated XLSX files
 
-Each PDF generates a separate XLSX file with all extracted tables.
+### Technical Specifications
+- **File Size Limit**: 100MB per PDF document
+- **Session Capacity**: 200MB total upload volume
+- **Optimal Performance**: Structured table formats with clear boundaries
+
+## Output Specifications
+
+**Deliverable Format**: Individual XLSX file per processed PDF
+
+**Included Metadata**:
+- Source page references
+- Extraction quality metrics
+- Table structure preservation indicators
+
+## Operational Considerations
+
+Best suited for documents with well-defined table structures. Performance may vary with scanned documents or complex layouts requiring OCR preprocessing.
